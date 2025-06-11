@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quejas y Sugerencias</title>
+  <style>
+    /* Imagen de fondo - Buzón */
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url('https://pbs.twimg.com/media/DfCccLCUcAI1ono.jpg:large');
+      background-size: cover;
+      background-position: left;
+      background-repeat: no-repeat;
+      padding: 40px;
+      margin: 0;
+    }
+
+    .container {
+      max-width: 600px;
+      background-color: rgba(255, 255, 255, 0.9);
+      margin: auto;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+    h2 {
+      text-align: center;
+      color: #333;
+    }
+
+    label {
+      display: block;
+      margin-top: 20px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 8px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    button {
+      margin-top: 20px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      padding: 15px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 0.9em;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Buzón de Quejas y Sugerencias CNCI Saltillo</h2>
+    <form action="https://formsubmit.co/contacto_campus_saltillo@cnci.com.mx" method="POST">
+      <input type="hidden" name="_captcha" value="false">
+      <label for="nombre">Tu nombre:</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="alumno">Nombre del alumno:</label>
+      <input type="text" id="alumno" name="nombre_alumno" required>
+
+      <label for="mensaje">Tu queja o sugerencia:</label>
+      <textarea id="mensaje" name="mensaje" required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+    <div class="footer">
+      Gracias por ayudarnos a mejorar.
+    </div>
+  </div>
+
+</body>
+</html>
