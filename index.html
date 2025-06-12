@@ -78,11 +78,14 @@
     <h2>Buzón de Quejas y Sugerencias CNCI Saltillo</h2>
     <form action="https://formsubmit.co/contacto_campus_saltillo@cnci.com.mx" method="POST">
       <input type="hidden" name="_captcha" value="false">
-      <label for="nombre">Correo electronico</label>
-      <input type="text" id="nombre" name="Correo electronico" required>
+      <label for="nombre">Email:</label>
+      <input type="text" id="nombre" name="Email:" required>
 
-      <label for="alumno">Nombre del alumno </label>
-      <input type="text" id="alumno" name="Nombre del alumno" required>
+      <label for="alumno">Nombre:</label>
+      <input type="text" id="alumno" name="Nombre:" required>
+      
+      <label for="alumno">Telefono:</label>
+      <input type="text" id="alumno" name="Telefono:" required>
 
       <label for="mensaje">Tu queja o sugerencia:</label>
       <textarea id="mensaje" name="Quejas o sugerencias" required></textarea>
@@ -109,7 +112,7 @@
 
     @keyframes moverDerecha {
       from { left:0; }
-      to { left: 0px; }
+      to { left: 50px; }
     }
   </style>
 </head>
